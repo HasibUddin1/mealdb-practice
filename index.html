@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html data-theme="corporate" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealDB Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="container mx-auto mt-10 mb-10">
+        <nav class="mx-auto flex items-center justify-between">
+            <div>
+                <h1 class="text-4xl font-bold text-gray-700">Tasty HUT</h1>
+            </div>
+            <div>
+                <button
+                    class="bg-yellow-500 hover:bg-yellow-700 ease-in-out duration-200 px-6 py-2 rounded-lg font-bold">Sign
+                    Up</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Delicious Best Foods Section -->
+    <section class="w-full h-screen bg-[url('images/banner_1.png')] bg-cover bg-center mb-28">
+        <div class="h-full backdrop-brightness-50">
+            <div>
+                <div class="text-white flex flex-col justify-center items-center h-screen w-9/12 mx-auto">
+                    <h1 class="font-bold text-center text-6xl mb-6">Taste Our Delicious <br> Best Foods</h1>
+                    <p class="text-center text-xl">There are many variations of passages of Lorem Ipsum available, but
+                        the majority have <br> suffered alteration in some form, by injected humou.</p>
+                    <div class="flex justify-center w-9/12 mx-auto mt-8">
+                        <input id="search-field" class="px-6 py-2 w-1/2 text-black rounded-lg" type="text"
+                            placeholder="Search any food">
+                        <button onclick="searchMeal()"
+                            class="bg-yellow-500 hover:bg-yellow-700 ease-in-out duration-200 px-8 py-2 rounded-lg text-black font-bold">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorite Food Section -->
+    <h1 class="text-5xl font-semibold text-center mb-12">Your Favorite Food</h1>
+    <section class="w-9/12 mx-auto mb-28">
+        <div id="favorite-food-container" class="grid grid-cols-2 gap-6">
+
+        </div>
+    </section>
+    <section>
+        <input type="checkbox" id="my-modal" class="modal-toggle" />
+        <div class="modal">
+            <div class="modal-box">
+                <h3 id="meal-header" class="font-bold text-lg mb-2"></h3>
+                <hr>
+                <img id="modal-image" class="w-full rounded-lg mt-2" src="" alt="">
+                <p class="py-4"><strong>Category: <span class="font-normal" id="modal-category"></span></strong></p>
+                <p class="py-4"><strong>Area: <span class="font-normal" id="modal-area"></span></strong></p>
+                <p class="py-4"><strong>Instructions: <span class="font-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ipsum, nulla dolorem necessitatibus odit omnis recusandae cupiditate veniam, fugit molestiae quisquam vel consectetur. Culpa, autem a ipsum dolore perferendis voluptatem.</span></strong></p>
+                <div class="modal-action">
+                    <label for="my-modal" class="btn">Close</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/mealdb.js"></script>
+</body>
+
+</html>
